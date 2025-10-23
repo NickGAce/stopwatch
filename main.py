@@ -35,27 +35,28 @@ class ModernStopwatch(ctk.CTk):
         button_frame1 = ctk.CTkFrame(self)
         button_frame1.pack(pady=10)
 
-        self.start_btn = ctk.CTkButton(button_frame1, text="Старт",
-                                       command=self.start, fg_color="#bbd779", hover_color="#acf250", text_color="#000000")
+        self.start_btn = ctk.CTkButton(button_frame1, text="Старт", font=("Arial", 40),
+                                       command=self.start, fg_color="#bbd779", hover_color="#acf250",
+                                       text_color="#000000", height=50, width=300)
         self.start_btn.pack(side="left", padx=5)
 
-        self.stop_btn = ctk.CTkButton(button_frame1, text="Стоп",
+        self.stop_btn = ctk.CTkButton(button_frame1, text="Стоп", font=("Arial", 40),
                                       command=self.stop, fg_color="#f25a50", hover_color="#ed2626",
-                                      state="disabled", text_color="#000000")
+                                      state="disabled", text_color="#000000", height=50, width=300)
         self.stop_btn.pack(side="left", padx=5)
 
         # Второй ряд: кнопка сброса, круг
         button_frame2 = ctk.CTkFrame(self)
         button_frame2.pack(pady=10)
 
-        self.lap_btn = ctk.CTkButton(button_frame2, text="Круг",
+        self.lap_btn = ctk.CTkButton(button_frame2, text="Круг", font=("Arial", 40),
                                      command=self.lap, fg_color="#e9cdf4", hover_color="#ce83ec",
-                                     state="disabled", text_color="#000000")
+                                     state="disabled", text_color="#000000", height=50, width=300)
         self.lap_btn.pack(side="left", padx=5)
 
-        self.reset_btn = ctk.CTkButton(button_frame2, text="Сброс",
+        self.reset_btn = ctk.CTkButton(button_frame2, text="Сброс", font=("Arial", 40),
                                        command=self.reset, fg_color="#f5e080", hover_color="#ffef1a",
-                                       text_color="#000000")
+                                       text_color="#000000", height=50, width=300)
         self.reset_btn.pack(side="left", padx=5)
 
         # Список кругов
