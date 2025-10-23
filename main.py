@@ -7,8 +7,9 @@ class ModernStopwatch(ctk.CTk):
         super().__init__()
 
         self.title("Секундомер byArina")
-        self.geometry("1920x1080")
-        # self.resizable(False, False)
+        screen_width = self.winfo_screenwidth()
+        screen_height = self.winfo_screenheight()
+        self.geometry(f"{screen_width}x{screen_height}+0+0")
 
         try:
             self.iconbitmap("stopwatch.ico")
